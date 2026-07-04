@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-surface-container: #1f1f27;
+  --color-tertiary-fixed: #e9ddff;
+  --color-on-primary-fixed: #07006c;
+  --color-on-primary: #1000a9;
+  --color-on-error: #690005;
+  --color-on-primary-container: #0d0096;
+  --color-surface-dim: #13131b;
+  --color-tertiary-fixed-dim: #d0bcff;
+  --color-on-secondary-fixed: #00201c;
+  --color-on-background: #e4e1ed;
+  --color-tertiary-container: #a078ff;
+  --color-surface-variant: #34343d;
+  --color-on-tertiary-container: #340080;
+  --color-error-container: #93000a;
+  --color-on-secondary-container: #003f38;
+  --color-surface-container-highest: #34343d;
+  --color-inverse-primary: #494bd6;
+  --color-on-secondary: #003731;
+  --color-on-tertiary-fixed: #23005c;
+  --color-on-secondary-fixed-variant: #005048;
+  --color-secondary-fixed: #71f8e4;
+  --color-surface-container-low: #1b1b23;
+  --color-secondary-fixed-dim: #4fdbc8;
+  --color-primary-container: #8083ff;
+  --color-on-surface: #e4e1ed;
+  --color-secondary: #4fdbc8;
+  --color-surface-container-high: #292932;
+  --color-background: #13131b;
+  --color-secondary-container: #04b4a2;
+  --color-inverse-surface: #e4e1ed;
+  --color-surface-tint: #c0c1ff;
+  --color-primary-fixed: #e1e0ff;
+  --color-surface-bright: #1a2235;
+  --color-primary: #c0c1ff;
+  --color-primary-fixed-dim: #c0c1ff;
+  --color-on-error-container: #ffdad6;
+  --color-surface-container-lowest: #0d0d15;
+  --color-surface: #13131b;
+  --color-on-tertiary: #3c0091;
+  --color-tertiary: #8b5cf6;
+  --color-outline-variant: #464554;
+  --color-on-primary-fixed-variant: #2f2ebe;
+  --color-on-tertiary-fixed-variant: #5516be;
+  --color-inverse-on-surface: #303038;
+  --color-on-surface-variant: #c7c4d7;
+  
+  /* Fonts */
+  --font-display-lg: 'Plus Jakarta Sans', sans-serif;
+  --font-headline-lg: 'Plus Jakarta Sans', sans-serif;
+  --font-headline-md: 'Plus Jakarta Sans', sans-serif;
+  --font-body-lg: 'Plus Jakarta Sans', sans-serif;
+  --font-body-md: 'Plus Jakarta Sans', sans-serif;
+  --font-label-md: 'JetBrains Mono', monospace;
+  --font-label-sm: 'JetBrains Mono', monospace;
+}
+
+/* Custom Design Guidelines Styles */
+body {
+  background-color: #090D16;
+  color: #e4e1ed;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.glass-panel {
+  background-color: rgba(17, 24, 39, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background-color: rgba(41, 41, 50, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.2s ease;
+}
+
+.glass-card:hover {
+  background-color: rgba(52, 52, 61, 0.8);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.active-glow {
+  box-shadow: 0 0 15px -3px rgba(192, 193, 255, 0.3);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #c0c1ff 0%, #4fdbc8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom Scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.editor-bg {
+  background-color: #1a2235;
+}

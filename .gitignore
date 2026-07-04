@@ -1,0 +1,42 @@
+# Dependency and Metadata directories
+node_modules/
+.antigravity/
+
+# Build outputs
+dist/
+release/
+out/
+build/
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment variables / secrets
+.env
+.env.*
+*.env
+*.pem
+*.key
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
