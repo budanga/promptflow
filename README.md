@@ -47,19 +47,11 @@ npm install
 
 ## Usage
 
-### For Developers
 To run the application in development mode with Hot Module Replacement (HMR):
 
 ```bash
 npm run dev
 ```
-
-The application will launch an Electron window pointing to your local Vite server, allowing for real-time updates during development.
-
-### For End Users
-1. Download the latest build from the releases page.
-2. Run the executable provided in the distribution folder.
-3. Configure your Ollama endpoint and preferred models within the settings menu before initiating semantic search indexing.
 
 ## Folder Structure
 
